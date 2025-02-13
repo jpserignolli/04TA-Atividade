@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <style>
+        body {
+            /* Reset */
+            font-family: 'Roboto', sans-serif;
+            background-color: #1b1c30;
+            color: #fff;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .caixa {
+            margin-top: 65px;
+        }
+
+        .caixa img {
+            width: 180px;
+        }
+
+        /* Centralização dos itens e textos */
+        #login {
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .email input, .senha input {
+            border-radius: 15px;
+            border: none;
+            width: 250px;
+            height: 35px;
+            padding-left: 15px;
+            background-color: #292a38;
+            color: #96979e;
+        }
+
+        .senha input {
+            margin-top: 15px;
+        }
+
+        a {
+            text-decoration: none;
+            color: aquamarine;
+        }
+
+        .entrar input {
+            cursor: pointer;
+            width: 120px;
+            height: 40px;
+            border-radius: 20px;
+            border: none;
+            background-color: #77c97c;
+            color: #1b1c30;
+            margin-top: 20px;
+        }
+
+        .entrar input:hover {
+            background-color: #66b16b;
+        }
+
+        .mensagem {
+            margin-top: 15px;
+            color: #96979e;
+        }
+
+        .mensagem a {
+            color: aquamarine;
+        }
+
+        .mensagem a:hover {
+            text-decoration: underline;
+        }
+        .links {
+            text-align: center;
+            position: fixed;
+            bottom: 20px;
+        }
+
+        .links a {
+            color: #f1f1f1;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="login">
+        <div class="caixa">
+            <img src="./Logo/logo.png" alt="">
+        </div>
+        <form>
+            <div class="email">
+                <input type="email" placeholder="Email" required>
+            </div>
+            <div class="senha">
+                <input type="password" placeholder="Senha" required>
+            </div>
+            <div class="entrar">
+                <input type="submit" value="Entrar">
+            </div>
+        </form>
+        <div class="mensagem">
+            Ainda não tem uma conta? <a href="#">Cria uma</a>.
+        </div>
+    </div>
+    <div class="links">
+        <a href="./index.html">Bolt</a>
+        <a href="./deepseek.html">Deep Seek</a>
+        <a href="./gpt.html">Chat GPT</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #1b1c30;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .login-container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 100%;
+            max-width: 400px;
+        }
+        .login-logo {
+            margin-bottom: 30px;
+        }
+        .login-logo img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .login-container h2 {
+            margin-bottom: 20px;
+            color: #333333;
+        }
+        .login-container input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .login-container button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #1d4ed8;
+            color: #ffffff;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .login-container button:hover {
+            background-color: #1e40af;
+        }
+        .signup-link {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #555555;
+        }
+        .signup-link a {
+            color: #1d4ed8;
+            text-decoration: none;
+        }
+        .signup-link a:hover {
+            text-decoration: underline;
+        }
+        .links {
+            text-align: center;
+            position: fixed;
+            bottom: 20px;
+        }
+
+        .links a {
+            color: #f1f1f1;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-logo">
+            <img src="./Logo/logo.png" alt="Logo">
+        </div>
+        <h2>Login</h2>
+        <form>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Senha" required>
+            <button type="submit">Entrar</button>
+        </form>
+        <div class="signup-link">
+            Ainda não tem uma conta? <a href="#">Crie uma.</a>
+        </div>
+        <div class="links">
+            <a href="./index.html">Bolt</a>
+            <a href="./deepseek.html">Deep Seek</a>
+            <a href="./gpt.html">Chat GPT</a>
+        </div>
+    </div>
+</body>
+</html>
